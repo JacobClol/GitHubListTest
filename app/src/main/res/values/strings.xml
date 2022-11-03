@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">GithubListTest</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">List Repo Github</string>
+    <string name="second_fragment_label">Detail Repo</string>
+    <string name="description_image_logo_github">LogoGitHub</string>
+    <string name="name">Name Repo</string>
+    <string name="full_name_repo">Full Name</string>
+    <string name="description">Description</string>
+    <string name="language">Language</string>
+    <string name="created_at">Created At:</string>
+    <string name="updated_at">Updated At:</string>
+    <string name="html_url">HTML Url</string>
+</resources>

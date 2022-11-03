@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListRepoFragment">
+
+    <fragment
+        android:id="@+id/ListRepoFragment"
+        android:name="com.example.githublisttest.ui.fragment.ListRepoFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_list_repo">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/DetailRepoFragment">
+            <argument
+                android:name="repo"
+                android:defaultValue="@null"
+                app:argType="com.example.githublisttest.domain.models.RepoGit"
+                app:nullable="true" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/DetailRepoFragment"
+        android:name="com.example.githublisttest.ui.fragment.DetailRepoFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_detail_repo">
+        <argument
+            android:name="repo"
+            android:defaultValue="@null"
+            app:argType="com.example.githublisttest.domain.models.RepoGit"
+            app:nullable="true" />
+    </fragment>
+</navigation>
